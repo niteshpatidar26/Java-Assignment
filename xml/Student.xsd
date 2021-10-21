@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/Student" xmlns:tns="http://www.example.org/Student" elementFormDefault="qualified">
+<element name="students">
+		<complexType>
+		<sequence>
+			<element name="student" maxOccurs="unbounded" minOccurs="1">
+					<complexType>
+						<sequence>
+							<element name="rollno" type="int"/>
+							<element name="firstname" type="string"/>
+							<element name="lastname" type="string"/>
+							<element name="sem1marks" type="decimal"/>
+							<element name="sem2marks" type="decimal"/>
+							<element name="sem3marks" type="decimal"/>
+							<element name="sem4marks" type="decimal"/>
+							<element name="sem5marks" type="decimal"/>
+							<element name="sem6marks" type="decimal"/>
+						</sequence>
+						<attribute name="id" type="ID" use="required"></attribute>
+					</complexType>
+				</element>				
+		</sequence>	
+		</complexType>
+	</element>
+</schema>
